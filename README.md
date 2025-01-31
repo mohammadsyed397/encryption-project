@@ -1,4 +1,4 @@
-# encryption-project
+# Encryption-Decyrption Project
 Encryption and decryption Project using python
 
 Terminal Tool Documentation
