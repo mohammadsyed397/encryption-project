@@ -46,36 +46,36 @@ The Terminal Encryption Tool is a command-line application that provides secure 
 # Installation
 - Install the required dependencies using pip:
 
-  'pip install cryptography pwinput'
+  `pip install cryptography pwinput`
 
 Or create a virtual environment and install dependencies:
-''' python -m venv venv
+    bash
+    ```python -m venv venv
     source venv/bin/activate  # On Windows, use: venv\Scripts\activate
-    pip install cryptography pwinput
+    pip install cryptography pwinput```
 
 
 # Steps to run python commands:
 
   Run the below python command using encryption_tool.py script to encrypt a file:
 
-' python encryption_tool.py encrypt path/to/file'
+`python encryption_tool.py encrypt path/to/file`
 
 Run the below python command using encryption_tool.py script to decrypt a file:
 
-' python encryption_tool.py decrypt path/to/file.enc '
+`python encryption_tool.py decrypt path/to/file.enc`
 
 Run the below python command using encryption_tool.py script to encrypt a directory:
 
-' python encryption_tool.py encrypt path/to/directory '
+`python encryption_tool.py encrypt path/to/directory `
 
 Run the below python command using encryption_tool.py script to decrypt a directory:
 
-' python encryption_tool.py decrypt path/to/directory_enc '
+`python encryption_tool.py decrypt path/to/directory_enc`
 
 
 
 # Secret Key Format
-
 
 The key should be seven alphanumeric characters. You can include special date placeholders:
 MM: Will be replaced with the current month
@@ -92,21 +92,21 @@ if there are any special characters in the secret key, it will reverse the digit
 # Steps to execute the docker image:
 To build the docker image
 
-' docker build -t imagename . '
+`docker build -t imagename . `
 
 To run the docker image when we want to encrypt the file:
 
-' docker run -it -v <path of the file>:/mnt <image name>  encrypt /mnt/<filename> '
+`docker run -it -v <path of the file>:/mnt <image name>  encrypt /mnt/<filename>`
 
 To run the docker image when we want to decrypt the file: 
 
-' docker run -it -v <path of the file>:/mnt <image name>  decrypt /mnt/<filename.enc> '
+`docker run -it -v <path of the file>:/mnt <image name>  decrypt /mnt/<filename.enc>`
 To run the docker image when we want to encrypt and decrypt the folder:
 
-' docker run -it -v <path of the folder>:/mnt <image name> encrypt /mnt/<foldername> '
+`docker run -it -v <path of the folder>:/mnt <image name> encrypt /mnt/<foldername>`
 To run the docker image when we want to encrypt and decrypt the folder:
 
-' docker run -it -v <path of the file>:/mnt <image name>  decrypt /mnt/<foldername_enc> '
+`docker run -it -v <path of the file>:/mnt <image name>  decrypt /mnt/<foldername_enc>`
 
 
 
