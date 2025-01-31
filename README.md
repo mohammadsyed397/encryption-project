@@ -48,10 +48,10 @@ The Terminal Encryption Tool is a command-line application that provides secure 
 
   `pip install cryptography pwinput`
 
-Or create a virtual environment and install dependencies:
+or elsecreate a virtual environment and install dependencies:
     bash
     ```python -m venv venv
-    source venv/bin/activate  # On Windows, use: venv\Scripts\activate
+    source venv/bin/activate
     pip install cryptography pwinput```
 
 
